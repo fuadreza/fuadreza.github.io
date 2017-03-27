@@ -9,7 +9,7 @@
 body {
 	font: 14px/21px Helvetica, sans-serif;
 }
-.contact_form h2, .contact_form label {font-family:Georgia, Times, "Helvetica", serif;}
+.contact_form h2, .contact_form label {font-family:Helvetica, sans-serif;}
 .form_hint, .required_notification {font-size: 11px;}
 .contact_form {
 	position:fixed;
