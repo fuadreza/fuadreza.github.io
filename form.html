@@ -9,21 +9,45 @@
 		display: block;
 		color: rgb(190,20,20);
 	}
+	body {
+		font-family: Helvetica;	
+	}
+	*:focus{outline:none;}
+	.form-daftar {
+		margin: auto;
+		width: 50%;
+		top: 5%;
+	}
+	.form-daftar tr:hover{
+		background-color: rgb(240,240,240);	
+	}
+	.form-daftar .field-isi{
+		width: 200px;
+	}
+	.form-daftar td{
+		text-align: top;
+	}
+	.form-daftar input:focus, .form-daftar textarea:focus{
+		
+		box-shadow: 0 0 5px #5cd053;	
+	}
+	tr:nth-child(even){background-color: #fafafa}
 	</style>	
 </head>
 <body>
+	<div class="form-daftar">
 	<form action="" oninput="x.value=parseInt(a.value)">
-		<h3>Sign Up Form</h3>
+		<h2>Sign Up Form</h2>
 		<hr />
 		<peringatan>Fill all empty form</peringatan>
-		<table>
+		<table width="675px">
 			<tr>
-				<td>Username</td>
-				<td><input type="text" placeholder="Username"></td>
+				<td width="240">Username</td>
+				<td><input class="field-isi" type="text" placeholder="Username"></td>
 			</tr>
 			<tr>
 				<td>Password</td>
-				<td><input type="password" placeholder="Password"></td>
+				<td><input class="field-isi" type="password" placeholder="Password"></td>
 			</tr>
 			<tr>
 				<td>Encryption</td>
@@ -43,18 +67,28 @@
 			<tr>
 				<td>Donation</td>
 				<td>
+					
 					0
 					<input type="range" id="a" name="a" value="0">
   					100
 					<output name="x" for="a"> | 0</output>$
+					
 				</td>
 			</tr>
 			<tr>
-				<td>Fullname</td>
-				<td><input type="text" placeholder="Fullname"></td>
+				<td>Email</td>
+				<td>
+					<input class="field-isi" type="text" placeholder="Email"> @
+					<select name="email">
+					    <option value="gmail">gmail.com</option>
+    					<option value="yahoo">yahoo.com</option>
+    					<option value="rocketmail">rocketmail.com</option>
+    					<option value="uny">student.uny.ac.id</option>
+  					</select>
+				</td>
 			</tr>
 			<tr>
-				<td>Gender</td>
+				<td valign="top">Gender</td>
 				<td>
 					<input type="radio" name="gender" value="male" checked>Male<br>
 					<input type="radio" name="gender" value="female">Female
@@ -63,8 +97,8 @@
 			<tr>
 				<td>Country</td>
 				<td>
-					<input list="browsers" placeholder="Country">
-  					<datalist id="browsers">
+					<input class="field-isi" list="country" placeholder="Country">
+  					<datalist id="country">
     					<option value="United State">
     					<option value="Indonesia">
     					<option value="Singapore">
@@ -74,14 +108,27 @@
 				</td>
 			</tr>
 			<tr>
-				<td>Address</td>
-				<td><textarea name="address" rows="5" cols="20" placeholder="Address"></textarea>
+				<td valign="top">Address</td>
+				<td><textarea name="address" rows="5" cols="28" placeholder="Address"></textarea>
 			</tr>
 			<tr>
-				<td>Profile Picture</td>
+				<td valign="top">Profile Picture</td>
 				<td>
 					<input type="file" placeholder="Fullname"><br>
 					<button type="button" onclick="alert('Picture Uploaded!')">Upload</button>
+				</td>
+			</tr>
+			<tr>
+				<td>Licencse Agreement</td>
+				<td>
+					<details>
+						User must:
+						(1) Register
+						(2) Select Account
+						(3) Donate 100$
+					</details>
+					
+					<input type="checkbox">I Agree to Terms and Conditions
 				</td>
 			</tr>
 			
@@ -91,5 +138,6 @@
 			</tr>
 		</table>
 	</form>
+	</div>
 </body>
 </html>
