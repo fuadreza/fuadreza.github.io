@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<script>document.createElement("peringatan")</script>
+	<title>Sign Up Now!</title>
+	<style>
+	peringatan {
+		font-size: 10px;
+		display: block;
+		color: rgb(190,20,20);
+	}
+	</style>	
+</head>
+<body>
+	<form action="" oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+		<h3>Sign Up Form</h3>
+		<hr />
+		<peringatan>Fill all empty form</peringatan>
+		<table>
+			<tr>
+				<td>Username</td>
+				<td><input type="text" placeholder="Username"></td>
+			</tr>
+			<tr>
+				<td>Password</td>
+				<td><input type="password" placeholder="Password"></td>
+			</tr>
+			<tr>
+				<td>Encryption</td>
+				<td><keygen name="security"></td>
+			</tr>
+			<tr>
+				<td>Account type</td>
+				<td> 
+					<select name="account">
+					    <option value="personal">Personal</option>
+    					<option value="enterprise">Enterprise</option>
+    					<option value="professional">Professional</option>
+    					<option value="lifetime">Lifetime</option>
+  					</select>
+				</td>
+			</tr>
+			<tr>
+				<td>Donation</td>
+				<td>
+					0
+					<input type="range" id="a" name="a" value="0">
+  					100
+					<output name="x" for="a"> | 0</output>$
+				</td>
+			</tr>
+			<tr>
+				<td>Fullname</td>
+				<td><input type="text" placeholder="Fullname"></td>
+			</tr>
+			<tr>
+				<td>Gender</td>
+				<td>
+					<input type="radio" name="gender" value="male" checked>Male<br>
+					<input type="radio" name="gender" value="female">Female
+				</td>
+			</tr>
+			<tr>
+				<td>Country</td>
+				<td>
+					<input list="browsers" placeholder="Country">
+  					<datalist id="browsers">
+    					<option value="United State">
+    					<option value="Indonesia">
+    					<option value="Singapore">
+    					<option value="China">
+    					<option value="Japan">
+  					</datalist>
+				</td>
+			</tr>
+			<tr>
+				<td>Address</td>
+				<td><textarea name="address" rows="5" cols="20" placeholder="Address"></textarea>
+			</tr>
+			<tr>
+				<td>Profile Picture</td>
+				<td>
+					<input type="file" placeholder="Fullname"><br>
+					<button type="button" onclick="alert('Picture Uploaded!')">Upload</button>
+				</td>
+			</tr>
+			
+			<tr>
+				<td></td>
+				<td><input type="submit" value="Submit"></td>
+			</tr>
+		</table>
+	</form>
+</body>
+</html>
