@@ -3,7 +3,7 @@
 	<meta charset="UTF-8">
 	<script>document.createElement("peringatan")</script>
 	<title>Sign Up Now!</title>
-	<style>
+	<style type="text/css">
 	peringatan {
 		font-size: 10px;
 		display: block;
@@ -31,8 +31,25 @@
 		
 		box-shadow: 0 0 5px #5cd053;	
 	}
+	.baris{
+		width: 100%;
+		margin-top: 0.5%;	
+		margin-bottom: 0.5%;
+		vertical-align: middle;
+	}
+	.colkiri {
+		display: inline-block;
+		margin-left:3%;
+		width: 30%;
+		height: 100%;
+		line-height: 100%;
+	}
+	.colkanan {
+		display: inline-block;
+		width: 60%;
+	}
 	tr:nth-child(even){background-color: #fafafa}
-	</style>	
+	</style>
 </head>
 <body>
 	<div class="form-daftar">
@@ -40,103 +57,89 @@
 		<h2>Sign Up Form</h2>
 		<hr />
 		<peringatan>Fill all empty form</peringatan>
-		<table width="675px">
-			<tr>
-				<td width="240">Username</td>
-				<td><input class="field-isi" type="text" placeholder="Username"></td>
-			</tr>
-			<tr>
-				<td>Password</td>
-				<td><input class="field-isi" type="password" placeholder="Password"></td>
-			</tr>
-			<tr>
-				<td>Encryption</td>
-				<td><keygen name="security"></td>
-			</tr>
-			<tr>
-				<td>Account type</td>
-				<td> 
-					<select name="account">
-					    <option value="personal">Personal</option>
-    					<option value="enterprise">Enterprise</option>
-    					<option value="professional">Professional</option>
-    					<option value="lifetime">Lifetime</option>
-  					</select>
-				</td>
-			</tr>
-			<tr>
-				<td>Donation</td>
-				<td>
-					
-					0
-					<input type="range" id="a" name="a" value="0">
-  					100
-					<output name="x" for="a"> | 0</output>$
-					
-				</td>
-			</tr>
-			<tr>
-				<td>Email</td>
-				<td>
-					<input class="field-isi" type="text" placeholder="Email"> @
-					<select name="email">
-					    <option value="gmail">gmail.com</option>
-    					<option value="yahoo">yahoo.com</option>
-    					<option value="rocketmail">rocketmail.com</option>
-    					<option value="uny">student.uny.ac.id</option>
-  					</select>
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">Gender</td>
-				<td>
-					<input type="radio" name="gender" value="male" checked>Male<br>
-					<input type="radio" name="gender" value="female">Female
-				</td>
-			</tr>
-			<tr>
-				<td>Country</td>
-				<td>
-					<input class="field-isi" list="country" placeholder="Country">
-  					<datalist id="country">
-    					<option value="United State">
-    					<option value="Indonesia">
-    					<option value="Singapore">
-    					<option value="China">
-    					<option value="Japan">
-  					</datalist>
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">Address</td>
-				<td><textarea name="address" rows="5" cols="28" placeholder="Address"></textarea>
-			</tr>
-			<tr>
-				<td valign="top">Profile Picture</td>
-				<td>
-					<input type="file" placeholder="Fullname"><br>
-					<button type="button" onclick="alert('Picture Uploaded!')">Upload</button>
-				</td>
-			</tr>
-			<tr>
-				<td valign="top">Licencse Agreement</td>
-				<td>
-					<details>
-						User must:
-						(1) Register
-						(2) Select Account
-						(3) Donate 100$
-					</details>
-					
-					<input type="checkbox">I Agree to Terms and Conditions
-				</td>
-			</tr>
-			
-			<tr>
-				<td></td>
-				<td><input type="submit" value="Submit"></td>
-			</tr>
-		</table>
+		<div class="baris">
+			<div class="colkiri"><label for="username">Username</label></div>
+			<div class="colkanan"><input class="field-isi" type="text" id="username" placeholder="Username"></div>
+		</div>
+		<div class="baris">
+			<div class="colkiri"><label for="password">Password</label></div>
+			<div class="colkanan"><input class="field-isi" id="password" type="password" placeholder="Password"></div>
+		</div>
+		<div class="baris">
+			<div class="colkiri"><label for="encryption">Encryption</label></div>
+			<div class="colkanan"><keygen name="security" id="encryption"></div>
+		</div>
+		<div class="baris">
+			<div class="colkiri"><label for="act">Account type</label></div>
+			<div class="colkanan">
+				<select name="account" id="act">
+					<option value="personal">Personal</option>
+    				<option value="enterprise">Enterprise</option>
+    				<option value="professional">Professional</option>
+    				<option value="lifetime">Lifetime</option>
+  				</select>
+			</div>
+		</div>
+		<div class="baris">
+			<div class="colkiri"><label for="donation">Donation</label></div>
+			<div class="colkanan">
+				0
+				<input type="range" id="a" name="a" value="0" max="1000">
+  				100
+				| <output name="x" for="a"> 0</output>$
+			</div>
+		</div>
+		<div class="baris">
+			<div class="colkiri"><label for="emaile">Email</label></div>
+			<div class="colkanan">
+				<input class="field-isi" type="text" id="emaile" placeholder="Email"> @
+				<select name="email">
+					<option value="gmail">gmail.com</option>
+    				<option value="yahoo">yahoo.com</option>
+    				<option value="rocketmail">rocketmail.com</option>
+    				<option value="uny">student.uny.ac.id</option>
+  				</select>
+			</div>
+		</div>
+		<div class="baris">
+			<div class="colkiri"><label for="gender">Gender</label></div>
+			<div class="colkanan">
+				<input type="radio" name="gender" value="male" checked>Male<br>
+				<input type="radio" name="gender" value="female">Female
+			</div>
+		</div>
+		<div class="baris">
+			<div class="colkiri"><label for="countrye">Country</label></div>
+			<div class="colkanan">
+				<input class="field-isi" id="countrye" list="country" placeholder="Country">
+  				<datalist id="country">
+    				<option value="United State">
+    				<option value="Indonesia">
+    				<option value="Singapore">
+    				<option value="China">
+    				<option value="Japan">
+  				</datalist>
+			</div>
+		</div>
+		<div class="baris">
+			<div class="colkiri"><label for="address">Address</label></div>
+			<div class="colkanan">
+				<textarea name="address" id="address" rows="5" cols="28" placeholder="Address"></textarea>
+			</div>
+		</div>
+		<div class="baris">
+			<div class="colkiri"><label for="propict">Profile Picture</label></div>
+			<div class="colkanan">
+				<input type="file" placeholder="Fullname"><br>
+				<button type="button" onclick="alert('Picture Uploaded!')">Upload</button>
+			</div>
+		</div>
+		<div class="baris">
+			<div class="colkiri"></div>
+			<div class="colkanan">
+				<input type="submit" value="Submit">
+			</div>
+		</div>
 	</form>
 	</div>
 </body>
