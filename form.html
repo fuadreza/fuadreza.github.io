@@ -12,6 +12,9 @@
 	body {
 		font-family: Helvetica;	
 	}
+	.headtitle{
+		background-color: #3498db;	
+	}
 	*:focus{outline:none;}
 	.form-daftar {
 		margin: auto;
@@ -54,8 +57,9 @@
 <body>
 	<div class="form-daftar">
 	<form action="" oninput="x.value=parseInt(a.value)">
-		<h2>Sign Up Form</h2>
-		<hr />
+		<div class="headtitle">
+			<h2>Sign Up Form</h2>
+		</div>
 		<peringatan>Fill all empty form</peringatan>
 		<div class="baris">
 			<div class="colkiri"><label for="username">Username</label></div>
