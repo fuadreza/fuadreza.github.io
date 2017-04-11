@@ -1,0 +1,82 @@
+/*CSS Inyong*/
+* {
+	margin: 0;
+	font-family: Helvetica;
+}
+.awalan {
+	width: 100%;
+	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+	height: 100vh;
+}
+.tengahin {
+	margin: auto;
+	max-width: 300px;
+	height: 100%;
+	color: white;
+	position: relative;
+}
+.tengahin .main-title{
+	position: absolute;
+	max-height: 30px;
+	font-size: 6vh;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 3px;
+	top: 2vh;
+}
+.tengahin .sub-title{
+	position: absolute;
+	max-height: 30px;
+	font-size: 3.5vh;
+	width: 100%;
+	text-align: center;
+	letter-spacing: 1px;
+	top: 9vh;
+}
+.tengahin .main-title:hover {
+	color: #005555;
+}
+.tengahin .bulet{
+	max-height: 20vh;
+	max-width: 20vh;
+	position: relative;
+	top: 24vh;
+	margin: auto;
+	display: block;
+}
+.myname{
+	color: #005555;
+	font-weight: bold;
+}
+.garis{
+	border-top: 1vh solid white;
+	width: 3vh;
+	margin: auto;
+}
+.title{
+	position: relative;
+	top: 28vh;
+	height: 30vh;
+}
+.tombool{
+	position: absolute;
+	width: 100%;
+	top: 15vh;
+	font-size: 3vh;
+}
+.tombol-mn{
+	width: 47%;
+	text-align: center;
+	display: inline-block;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	margin: 2px;
+	border: 1px solid white;
+	color: white;
+	border-radius: 2px;
+}
+.tombol-mn:hover{
+	background-color: #005555;
+	color: white;
+	border-color: #005555;
+}
