@@ -2,11 +2,16 @@
 * {
 	margin: 0;
 	font-family: Helvetica;
+	transition: all 0.7s;
+}
+body{
+	overflow-x: hidden;
 }
 .awalan {
 	width: 100%;
 	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
 	height: 100vh;
+	position: relative;
 }
 .tengahin {
 	margin: auto;
@@ -15,6 +20,68 @@
 	color: white;
 	position: relative;
 }
+/*Namaku */
+.myname{
+	color: #005555;
+	font-weight: bold;
+}
+
+/* Ini buat menunya */
+.garis-trigger {
+	position: absolute;
+	clip: rect(0, 0, 0, 0);
+}
+label[for="garis-trigger"] {
+  position: fixed;
+  left: 15px; top: 15px;
+  z-index: 2;
+  height: 30px;
+  width: 30px;
+  cursor: pointer;
+  background-image: url("images/menuki.svg");
+  background-size: contain;
+}
+.menune {
+    list-style: none;
+    background: #005555;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    z-index: 0;
+}
+.imenu {
+  width: 200px;
+}
+.imenu a {
+  display: block;
+  padding: 1em;
+  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.imenu a:hover {
+  color: #005555;
+  background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
+}
+a.menu-aktif{
+	color: #005555;
+  	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);	
+}
+.garis-trigger:checked + label {
+	left: 215px;
+}
+.garis-trigger + label {
+	transition: all 0.5s;
+}
+.garis-trigger:checked ~ .awalan {
+    left: 200px;
+    box-shadow: 0 0 5px 5px rgba(0,0,0,0.5);
+}
+/* Rampungan menu */
+
+/*Judul tengah */
 .tengahin .main-title{
 	position: absolute;
 	max-height: 30px;
@@ -44,25 +111,21 @@
 	margin: auto;
 	display: block;
 }
-.myname{
-	color: #005555;
-	font-weight: bold;
-}
-.garis{
-	border-top: 1vh solid white;
-	width: 3vh;
-	margin: auto;
-}
 .title{
 	position: relative;
 	top: 28vh;
 	height: 30vh;
+	border: 3px solid white;
+	border-style: dashed hidden hidden;
 }
+/*end Judul tengah */
+
+/*Tombol di tengah */
 .tombool{
 	position: absolute;
 	width: 100%;
 	top: 15vh;
-	font-size: 3vh;
+	font-size: 2.5vh;
 }
 .tombol-mn{
 	width: 47%;
@@ -72,11 +135,24 @@
 	padding-bottom: 8px;
 	margin: 2px;
 	border: 1px solid white;
-	color: white;
 	border-radius: 2px;
+	color: #1fc8db;
+	font-weight: bold;
+	background: white;
 }
 .tombol-mn:hover{
 	background-color: #005555;
 	color: white;
 	border-color: #005555;
+}
+/* end Tombol di tengah */
+.copyleft{
+	position: absolute;
+	bottom: 0px;
+	color: white;
+}
+.icopy{
+	font-size: 20px;
+	display:inline-block;
+  	transform: rotate(180deg);
 }
