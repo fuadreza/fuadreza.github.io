@@ -25,6 +25,9 @@ body{
 	color: #005555;
 	font-weight: bold;
 }
+.myname2{
+	font-weight: lighter;
+}
 /* Ini buat menunya */
 .garis-trigger {
 	position: absolute;
@@ -159,7 +162,7 @@ a.menu-aktif{
 }
 /* end Copyleft */
 
-/* CSS TAB */
+/* CSS TAB 1 */
 .resume-box{
 	width: 100%;
 	position: relative;
@@ -177,12 +180,16 @@ input {
 }
 label.tabbe {
   display: inline-block;
-  width: 15%;
-  padding: 15px 25px;
+  width: 18%;
+  padding: 15px 0px;
+  font-size: 3vmin;
   font-weight: 600;
   text-align: center;
   color: #005555;
   opacity: 0.5;
+}
+label.tabmar{
+	margin-left: 5%;
 }
 
 label.tabbe:hover {
@@ -221,11 +228,12 @@ input:checked + label.tabbe {
 .under-hello{
 	display: block;
 	width: 100%;
-	font-size: 3vw;
+	font-size: 2.5vw;
 	letter-spacing: 0.7vw;
 	font-weight: bold;
 	color: #00cccc;
 	background: #000000;
+	padding: 5px 0 5px; 
 }
 .under-hello:hover{
 	background: #ffffff;
@@ -233,50 +241,149 @@ input:checked + label.tabbe {
 }
 /* end CSS TAB */
 
-
-/* Tab */
-.resumee-box{
-	width: 100%;
-	height: 100%;
-	position: relative;
+/* CSS tab 2 */
+.edu-bar{
+	display: block;
+	padding: 15px 0 15px 0;
+	background: #005555;
+	color: #101010;
+	opacity: 0.7;
+	font-weight: bold;
 }
-.myres{
-	position: absolute;
+.edu-bar:hover{
+	opacity: 1.0;
+}
+.edu-jud{
+	font-size: 7vmin;
+	display: block;
+	letter-spacing: 1vmin;
+}
+.edu-year{
+	font-style: italic;
+	letter-spacing: 
+}
+.edu-now{
+	background: #1f1f1f;
+	color: rgb(0,200,200);
+	opacity: 1.0;
+}
+/* end CSS tab 2 */
+
+/* CSS tab 3 */
+ul.sqlist {
+	list-style-type: square;
+	font-size: 3vmin;
+	width: 55%;
+	margin: auto;
+	margin-top: 5%;
+	text-align: left;
+	letter-spacing: 0.5vmin;
+}
+ul.sqlist li {
+	background: rgba(25,25,25,0.5);
+	padding: 5px 10px 5px 10px;
+	margin-bottom: 10px;
+	border-radius: 2px;
+}
+.jmn, .elinfo, .hsc, .unity {
+	font-weight: bold;
+	font-size: 5vmin;
+}
+ul.sqlist li:hover {
+	text-shadow: 2px 2px #002020;
+	background: rgba(90,90,90,0.5);
+	width: 105%;
+}
+.jmn {
+	color: #00b0ff;
+}
+.elinfo {
+	color: #00acc1;
+}
+.hsc {
+	color: #004044;
+}
+.unity {
+	color: #2979ff;
+}
+/* end CSS tab 3 */
+
+/* CSS tab 4 */
+.rate{
+	margin-bottom: 10px;
+}
+.rate-box{
+	width: 60%;
+	text-align: left;
+	position: relative;
 	display: block;
 	margin: auto;
-	top: 45%;
-	color: white;
-	font-size: 10vh;
+	border: 3px solid #252525;
+	padding: 10px;
 }
-
-.boxe-1{
-	width: 100%;
+.rate-box:hover {
+	background: rgba(50,50,50,0.1);
+}
+.big-rate{
+	font-size: 8vmin;
+	display: block;
+	text-decoration: underline;
+}
+.avge{
+	letter-spacing: 1vmin;
+}
+.rate1, .rate2, .rate3, .rate4, .rate5 {
 	position: relative;
-	height: 90%;
-	color: white;
+	display: inline-block;
+	font-weight: bold;
+	letter-spacing: 0.4vmin;
+	margin-bottom: 8px;
+	padding: 2vmin;
+	border-radius: 2px;
+	box-shadow: 4px 4px 0px #252525;
 }
-.boxe-1 article.tabs{
-	width: 100%;
-	height: 100%;
+.rate1{
+	background: #80d8ff;
+	width: 81%;
 }
-article.tabs section{
-	position: absolute;
-	top: 12%;
-	height: 80%;
-	width: 100%;
-	padding: 10px 20px;
-	background: linear-gradient(141deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 75%);
-	z-index: 0;
+.rate2{
+	background: #40c4ff;
+	width: 78%;
 }
-article.tabs section:first-child{
-	z-index: 1;
-	display: block;
+.rate3{
+	background: #00b0ff;
+	width: 82%;
 }
-article.tabs section:target{
-	z-index: 2;
-	display: block;
+.rate4{
+	background: #00acc1;
+	width: 86%;
 }
+.rate5{
+	background: #006064;
+	width: 86%;
+}
+/* end Css tab 4 */
 
+/* CSS tab 5 */
+.act-box {
+	display: block;
+	width: 30%;
+	font-size: 5vmin;
+	font-weight: bold;
+	color: #005555;
+	background: #eeeeee;
+	border-radius: 2px;
+	margin: 20px auto; 
+	padding: 20px 0 20px 0;
+	overflow: hidden;
+}
+.act-box:hover {
+	background: #005555;
+	width: 50%;
+	color: white;
+	box-shadow: 7px 7px #111111;
+}
+/* end CSS tab 5 */
 /* Box 2 */
 .boxe-2{
 	width: 100%;
@@ -294,3 +401,40 @@ article.tabs section:target{
 	padding: 5px;
 }
 /* End tab */
+
+/* Biography */
+.bio-title {
+	color: white;
+	display: block;
+	text-align: center;
+	padding: 20px;
+	font-size: 7vmin;
+	letter-spacing: 2vmin;
+	text-decoration: underline;
+	font-weight: bold;
+}
+.ptpro {
+	position: relative;
+	margin: auto;
+	display: block;
+	max-width: 50vmin;
+}
+.mybio {
+	position: relative;
+	width: 60%;
+	margin: 20px auto;
+	text-align: justify;
+	font-size: 2.5vmin;
+	color: white;
+	border: 3px solid white;
+	border-style: dashed;
+	border-radius: 2px;
+	padding: 20px;
+}
+.mybio p::first-letter {
+	font-size: 200%;
+}
+.mybio:hover {
+	border-style: solid;
+}
+/* end Biography */
