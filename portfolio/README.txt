@@ -7,7 +7,6 @@
  - Febri Triyanto
  - Arif Puji Nugroho
  - Dentiano Nugroho
- - Helmi Arghya Santosa
  - Ghina Junia Syasmi
 
 3. Hours spent for completing the assignment :
