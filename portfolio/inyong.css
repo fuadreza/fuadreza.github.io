@@ -219,7 +219,7 @@ input:checked + label.tabbe {
 }
 .big-hello{
 	width: 100%;
-	font-size: 25vmin;
+	font-size: 26vmin;
 	display: block;
 	letter-spacing: 1.5vw;
 	text-shadow: 5px 5px 0px #005555;
