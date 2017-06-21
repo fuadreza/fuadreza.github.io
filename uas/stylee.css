@@ -44,10 +44,10 @@ body {
 	display: block;
 	margin: auto;
 	font-family: 'Lovelo';
-	font-size: 8vh;
+	font-size: 3vw;
 }
 .logone .logo {
-	max-height: 80vh;
+	height: 24vmin;
 	top: 15vmin;
 	position: relative;
 	margin: auto;
