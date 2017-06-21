@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Quiz SD</title>
+	<link rel="stylesheet" type="text/css" href="stylee.css">
+</head>
+<body>
+	<div id="wadahQuiz" class="wadah">
+		<div id="soale" class="soale"></div>
+		<div class="wadahPil">
+			<label onclick="selectOption()">
+				<div class="pilihan" id="pilih1">
+					<input type="radio" name="pilihan" value="1" /><span class="pilABC">A</span><span id="pil1"></span>
+				</div>
+			</label>
+		</div>
+		<div class="wadahPil">
+			<label onclick="selectOption()">
+				<div class="pilihan" id="pilih2">
+					<input type="radio" name="pilihan" value="2" /><span class="pilABC">B</span><span id="pil2"></span>
+				</div>
+			</label>
+		</div>
+		<div class="wadahPil">
+			<label onclick="selectOption()">
+				<div class="pilihan" id="pilih3">
+					<input type="radio" name="pilihan" value="3" /><span class="pilABC">C</span><span id="pil3"></span>
+				</div>
+			</label>
+		</div>
+		<div class="wadahPil">
+			<label onclick="selectOption()">
+				<div class="pilihan" id="pilih4">
+					<input type="radio" name="pilihan" value="4" /><span class="pilABC">D</span><span id="pil4"></span>
+				</div>
+			</label>
+		</div>
+	</div>
+	<div id="inpute" style="display:none;"><input id="jawaban" type="text" placeholder="jawaban" onkeypress='return event.charCode >= 48 && event.charCode <= 57 || event.keyCode == 8'></div>
+	<div class="kaki">
+		<button id="nextButton" class="next-btn" onclick="loadNextQuestion();">Lanjut</button>
+		<span>Setelah lanjut tidak bisa kembali ! Jadi, jawab dengan teliti ya >,<</span>
+		</div>
+	<div id="result" class="container result" style="display:none;"></div>
+	
+	<script src="js/question.js"></script>
+	<script src="js/quiz-script.js"></script>
+</body>
+</html>
