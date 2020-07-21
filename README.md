@@ -1,4 +1,4 @@
 # fuadreza.github.io
 Ini halaman GitHubku loh..
 
-<a href="fuadreza.github.io> Come here </a>
+Kamu bisa klik [disini](https://fuadreza.github.io/)
