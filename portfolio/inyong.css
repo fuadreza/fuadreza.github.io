@@ -15,7 +15,7 @@ body{
 }
 .tengahin {
 	margin: auto;
-	max-width: 300px;
+	max-width: 400px;
 	height: 100%;
 	color: white;
 	position: relative;
@@ -87,7 +87,7 @@ a.menu-aktif{
 .tengahin .main-title{
 	position: absolute;
 	max-height: 30px;
-	font-size: 6vh;
+	font-size: 5vh;
 	width: 100%;
 	text-align: center;
 	letter-spacing: 3px;
@@ -96,7 +96,7 @@ a.menu-aktif{
 .tengahin .sub-title{
 	position: absolute;
 	max-height: 30px;
-	font-size: 3.5vh;
+	font-size: 3vh;
 	width: 100%;
 	text-align: center;
 	letter-spacing: 1px;
