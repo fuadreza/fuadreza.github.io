@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Aplikasi Kami</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 5px;
+        }
+
+        h1 {
+            color: #007BFF;
+        }
+
+        h2 {
+            color: #555;
+            margin-top: 30px;
+        }
+
+        p {
+            margin: 10px 0;
+        }
+
+        .lang-toggle {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .lang-toggle button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .lang-toggle button:hover {
+            background: #0056b3;
+        }
+
+        .content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+
+        @media (min-width: 768px) {
+            .content {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Privacy Policy</h1>
+
+        <div class="lang-toggle">
+            <button onclick="toggleLanguage()">Switch Language</button>
+        </div>
+
+        <div class="content">
+            <div id="english">
+                <h2>English</h2>
+                <p><strong>1. Collection and Use of Information</strong></p>
+                <p>Our application does not collect or store user's personal information. We do not require an internet connection except for displaying advertisements.</p>
+
+                <p><strong>2. Ads</strong></p>
+                <p>This application may display ads provided by third parties. These advertisers may use technologies such as cookies and web beacons to gather information about your activities in order to provide advertisements based on your interests. The information collected by advertisers does not include personal information.</p>
+
+                <p><strong>3. Security</strong></p>
+                <p>We take reasonable security measures to protect our users' personal information, even though we do not collect personal information in this application.</p>
+
+                <p><strong>4. Changes to Privacy Policy</strong></p>
+                <p>This privacy policy may be updated from time to time without prior notice. Significant changes will be announced within the application.</p>
+
+                <p><strong>5. Contact</strong></p>
+                <p>If you have any questions or concerns about this privacy policy, please contact us at fuady1997@gmail.com.</p>
+            </div>
+
+            <div id="indonesian">
+                <h2>Bahasa Indonesia</h2>
+                <p><strong>1. Pengumpulan dan Penggunaan Informasi</strong></p>
+                <p>Aplikasi kami tidak mengumpulkan atau menyimpan informasi pribadi pengguna. Kami tidak memerlukan koneksi internet kecuali untuk menampilkan iklan.</p>
+
+                <p><strong>2. Iklan</strong></p>
+                <p>Aplikasi ini mungkin menampilkan iklan yang disediakan oleh pihak ketiga. Pengiklan ini dapat menggunakan teknologi seperti cookies dan web beacons yang dapat mengumpulkan informasi tentang aktivitas pengguna Anda untuk menyediakan iklan yang sesuai dengan minat Anda. Informasi yang dikumpulkan oleh pengiklan tidak termasuk informasi pribadi.</p>
+
+                <p><strong>3. Keamanan</strong></p>
+                <p>Kami mengambil langkah-langkah keamanan yang wajar untuk melindungi informasi pribadi pengguna kami, meskipun kami tidak mengumpulkan informasi pribadi dalam aplikasi ini.</p>
+
+                <p><strong>4. Perubahan pada Kebijakan Privasi</strong></p>
+                <p>Kebijakan privasi ini dapat diperbarui dari waktu ke waktu tanpa pemberitahuan sebelumnya. Perubahan signifikan akan diumumkan di dalam aplikasi.</p>
+
+                <p><strong>5. Kontak</strong></p>
+                <p>Jika Anda memiliki pertanyaan atau kekhawatiran tentang kebijakan privasi ini, silakan hubungi kami di fuady1997@gmail.com.</p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function toggleLanguage() {
+            const english = document.getElementById('english');
+            const indonesian = document.getElementById('indonesian');
+            if (english.style.display === 'none') {
+                english.style.display = 'block';
+                indonesian.style.display = 'none';
+            } else {
+                english.style.display = 'none';
+                indonesian.style.display = 'block';
+            }
+        }
+        
+        // Initial state
+        document.getElementById('indonesian').style.display = 'none';
+    </script>
+</body>
+</html>
